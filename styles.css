@@ -132,7 +132,7 @@ input[type=range] {
     color: var(--color-White);
     display: flex;
     flex-direction: row-reverse;
-    font-size: 52px;
+    font-size: 64px;
     margin: 25px auto;
     padding: 25px;
   }
