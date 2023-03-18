@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Calculator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">  
 </head>
 <body>
-  <div class="calculator">
-    <section class="header">
+  <main class="calculator" >
+    <header class="header">
       <h1>calc</h1>
-      <div>
+      <nav aria-label="Thema selector">
         <span class="thema"><span>THEME</span></span>
         <label>
           <div>
@@ -23,37 +23,37 @@
           </div>
           <input type="range" min="1" max="3" step="1" value="1" onchange="toogleThema()" id="slider">
         </label>
-      </div>
+      </nav>
+    </header>
+    <section class="display" role="region">
+      <p id="result">399,981</p>
     </section>
-    <section class="display">
-      <p id="result">0</p>
+    <section class="keyboard" role="region">
+      <button class="number" aria-label="7" onclick="addToDisplay('7')">7</button>
+      <button class="number" aria-label="8" onclick="addToDisplay('8')">8</button>
+      <button class="number" aria-label="9" onclick="addToDisplay('9')">9</button>
+      <button class="del" aria-label="Delete last character" onclick="deleteLast()">DEL</button>
+      <button class="number" aria-label="4" onclick="addToDisplay('4')">4</button>
+      <button class="number" aria-label="5" onclick="addToDisplay('5')">5</button>
+      <button class="number" aria-label="6" onclick="addToDisplay('6')">6</button>
+      <button class="operator" aria-label="Add" onclick="setOperator('+')">+</button>
+      <button class="number" aria-label="1" onclick="addToDisplay('1')">1</button>
+      <button class="number" aria-label="2" onclick="addToDisplay('2')">2</button>
+      <button class="number" aria-label="3" onclick="addToDisplay('3')">3</button>
+      <button class="operator" aria-label="Substract" onclick="setOperator('-')">-</button>
+      <button class="operator" aria-label="Decimal point" onclick="addDecimal()">.</button>
+      <button class="number" aria-label="0" onclick="addToDisplay('0')">0</button>
+      <button class="operator" aria-label="Divide" onclick="setOperator('/')">/</button>
+      <button class="operator" aria-label="Multiply" onclick="setOperator('*')">*</button>
+      <button class="reset" aria-label="Reset" onclick="resetDisplay()">RESET</button>
+      <button class="operator equal" aria-label="Calculate" onclick="calculate()">=</button>
     </section>
-    <section class="keyboard">
-      <button class="number" onclick="addToDisplay('7')">7</button>
-      <button class="number" onclick="addToDisplay('8')">8</button>
-      <button class="number" onclick="addToDisplay('9')">9</button>
-      <button class="del" onclick="deleteLast()">DEL</button>
-      <button class="number" onclick="addToDisplay('4')">4</button>
-      <button class="number" onclick="addToDisplay('5')">5</button>
-      <button class="number" onclick="addToDisplay('6')">6</button>
-      <button class="operator" onclick="setOperator('+')">+</button>
-      <button class="number" onclick="addToDisplay('1')">1</button>
-      <button class="number" onclick="addToDisplay('2')">2</button>
-      <button class="number" onclick="addToDisplay('3')">3</button>
-      <button class="operator" onclick="setOperator('-')">-</button>
-      <button class="operator" onclick="addDecimal()">.</button>
-      <button class="number" onclick="addToDisplay('0')">0</button>
-      <button class="operator" onclick="setOperator('/')">/</button>
-      <button class="operator" onclick="setOperator('*')">*</button>
-      <button class="reset" onclick="resetDisplay()">RESET</button>
-      <button class="operator equal" onclick="calculate()">=</button>
-    </section>
-  </div>
-  <script src="script.js"></script>
-  <script src="toggleInputs.js"></script>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="script.js"></script>
+    <script src="toggleInputs.js"></script>
+  </main>
 </body>
 </html>

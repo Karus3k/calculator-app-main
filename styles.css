@@ -45,7 +45,7 @@ body {
     justify-content: center;
     width: 100vw;
 }
-.calculator {
+main {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ body {
     padding: 15px;
     width: 375px;
 }
-section {
+.header, .display, .keyboard {
     width: 100%;
 }
 h1 {
