@@ -25,29 +25,31 @@
         </label>
       </nav>
     </header>
-    <section class="display" aria-roledescription="region">
-      <p id="result">399,981</p>
-    </section>
-    <section class="keyboard" aria-roledescription="region">
-      <button class="number" aria-label="7" onclick="addToDisplay('7')">7</button>
-      <button class="number" aria-label="8" onclick="addToDisplay('8')">8</button>
-      <button class="number" aria-label="9" onclick="addToDisplay('9')">9</button>
-      <button class="del" aria-label="Delete last character" onclick="deleteLast()">DEL</button>
-      <button class="number" aria-label="4" onclick="addToDisplay('4')">4</button>
-      <button class="number" aria-label="5" onclick="addToDisplay('5')">5</button>
-      <button class="number" aria-label="6" onclick="addToDisplay('6')">6</button>
-      <button class="operator" aria-label="Add" onclick="setOperator('+')">+</button>
-      <button class="number" aria-label="1" onclick="addToDisplay('1')">1</button>
-      <button class="number" aria-label="2" onclick="addToDisplay('2')">2</button>
-      <button class="number" aria-label="3" onclick="addToDisplay('3')">3</button>
-      <button class="operator" aria-label="Substract" onclick="setOperator('-')">-</button>
-      <button class="operator" aria-label="Decimal point" onclick="addDecimal()">.</button>
-      <button class="number" aria-label="0" onclick="addToDisplay('0')">0</button>
-      <button class="operator" aria-label="Divide" onclick="setOperator('/')">/</button>
-      <button class="operator" aria-label="Multiply" onclick="setOperator('*')">*</button>
-      <button class="reset" aria-label="Reset" onclick="resetDisplay()">RESET</button>
-      <button class="operator equal" aria-label="Calculate" onclick="calculate()">=</button>
-    </section>
+    <body>
+      <div class="display">
+        <p id="result">399,981</p>
+      </div>
+      <div class="keyboard">
+        <button class="number" aria-label="7" onclick="addToDisplay('7')">7</button>
+        <button class="number" aria-label="8" onclick="addToDisplay('8')">8</button>
+        <button class="number" aria-label="9" onclick="addToDisplay('9')">9</button>
+        <button class="del" aria-label="Delete last character" onclick="deleteLast()">DEL</button>
+        <button class="number" aria-label="4" onclick="addToDisplay('4')">4</button>
+        <button class="number" aria-label="5" onclick="addToDisplay('5')">5</button>
+        <button class="number" aria-label="6" onclick="addToDisplay('6')">6</button>
+        <button class="operator" aria-label="Add" onclick="setOperator('+')">+</button>
+        <button class="number" aria-label="1" onclick="addToDisplay('1')">1</button>
+        <button class="number" aria-label="2" onclick="addToDisplay('2')">2</button>
+        <button class="number" aria-label="3" onclick="addToDisplay('3')">3</button>
+        <button class="operator" aria-label="Substract" onclick="setOperator('-')">-</button>
+        <button class="operator" aria-label="Decimal point" onclick="addDecimal()">.</button>
+        <button class="number" aria-label="0" onclick="addToDisplay('0')">0</button>
+        <button class="operator" aria-label="Divide" onclick="setOperator('/')">/</button>
+        <button class="operator" aria-label="Multiply" onclick="setOperator('*')">*</button>
+        <button class="reset" aria-label="Reset" onclick="resetDisplay()">RESET</button>
+        <button class="operator equal" aria-label="Calculate" onclick="calculate()">=</button>
+      </div>
+    </body>
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
