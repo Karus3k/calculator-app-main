@@ -38,11 +38,12 @@
     padding: 0;
 }
 body {
-    align-items: center;
+    align-items: top;
     background-color: var(--color-mainBackground);
     display: flex;
     height: 100vh;
     justify-content: center;
+    padding-top: 60px;
     width: 100vw;
 }
 main {
@@ -140,7 +141,7 @@ input[type=range] {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 70px);
-    grid-gap: 15px;
+    grid-gap: 20px;
     padding: 20px;
   }
 .number, .operator{
