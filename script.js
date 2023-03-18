@@ -44,13 +44,17 @@ function updateDisplay() {
   }
 
   function setOperator(selectedOperator) {
-    calculate()
+    if (operator !== null && operand !== null) {
+      calculate()
+    }
     operator = selectedOperator;
     operand = parseFloat(displayValue.toString().replace(',','.'));
     displayValue = '0';
   }
 
   function calculate() {
+    if (operator === null || operand === null) return;
+
     const currentOperand = parseFloat(displayValue.toString().replace(',','.'));
     let result;
   
